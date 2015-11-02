@@ -6,9 +6,9 @@ var PipeGraphicsComponent = function(entity) {
 PipeGraphicsComponent.prototype.draw = function(context) {
     console.log('Drawing a pipe');
     context.beginPath();
-    context.fillRect(50, 10, 100, 100);
+    context.fillRect(100, 100, 100, 100);
     context.fill();
-    context.fillStyle = "orange";
+    context.fillStyle = "green";
 
 };
 
