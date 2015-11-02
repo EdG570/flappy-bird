@@ -4,11 +4,14 @@ var BirdGraphicsComponent = function(entity) {
 
 BirdGraphicsComponent.prototype.draw = function(context) {
     console.log('Drawing a bird');
+
+    context.save();
+    context.translate(5, 5);
+    context.scale(5, 5);
     context.beginPath();
-    context.fillRect(200, 200, 100, 100);
+    context.arc(0, 0, 1, 0, 2 * Math.PI);
     context.fill();
-    context.fillStyle = "red";
-    
+    context.restore();
 
 };
 
