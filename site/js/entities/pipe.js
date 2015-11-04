@@ -1,5 +1,5 @@
 var graphicsComponent = require("../components/graphics/pipe");
-var physicsComponent = require("../components/physics/physics");
+var physicsComponent = require("../components/physics/pipe");
 
 
 var Pipe = function(position, pipeSize) {

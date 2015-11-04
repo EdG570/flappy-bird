@@ -16,10 +16,6 @@ var PhysicsComponent = function(entity) {
         y: 0
     };
 
-    this.pipeSize = {
-        width: 0,
-        height: 0
-    }
 };
 
 PhysicsComponent.prototype.update = function(delta) {

@@ -1,5 +1,5 @@
 var graphicsComponent = require("../components/graphics/bird");
-var physicsComponent = require("../components/physics/physics");
+var physicsComponent = require("../components/physics/bird");
 
 var Bird = function() {
     var physics = new physicsComponent.PhysicsComponent(this);
