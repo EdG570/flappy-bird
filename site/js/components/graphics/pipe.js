@@ -5,11 +5,14 @@ var PipeGraphicsComponent = function(entity) {
 PipeGraphicsComponent.prototype.draw = function(context) {
   console.log('Drawing a pipe');
   var position = this.entity.components.physics.position;
+  var pipeSize = this.entity.components.physics.pipeSize;
 
   context.save();
   context.translate(position.x, position.y);
-  context.rect(0, 0.5, 0.5, 0.5);
+  context.fillStyle = "green";
+  context.fillRect(0, 0, pipeSize.width, pipeSize.height);
   context.restore();
+
 };
 
 

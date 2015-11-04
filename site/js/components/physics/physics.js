@@ -5,14 +5,21 @@ var PhysicsComponent = function(entity) {
         x: 0,
         y: 0
     };
+
     this.velocity = {
         x: 0,
         y: 0
     };
+
     this.acceleration = {
         x: 0,
         y: 0
     };
+
+    this.pipeSize = {
+        width: 0,
+        height: 0
+    }
 };
 
 PhysicsComponent.prototype.update = function(delta) {

@@ -1,12 +1,14 @@
 var graphicsComponent = require("../components/graphics/pipe");
 var physicsComponent = require("../components/physics/physics");
 
-var Pipe = function() {
+
+var Pipe = function(position, pipeSize) {
     var physics = new physicsComponent.PhysicsComponent(this);
-    physics.position.y = 0.5;
-    physics.position.x = 0;
+    physics.position = position;
+    physics.pipeSize = pipeSize;
 
     var graphics = new graphicsComponent.PipeGraphicsComponent(this);
+
     
     this.components = {
       physics: physics,
