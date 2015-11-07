@@ -3,7 +3,6 @@ var PipeGraphicsComponent = function(entity) {
 };
 
 PipeGraphicsComponent.prototype.draw = function(context) {
-  console.log('Drawing a pipe');
   var position = this.entity.components.physics.position;
   var pipeSize = this.entity.components.physics.pipeSize;
 
